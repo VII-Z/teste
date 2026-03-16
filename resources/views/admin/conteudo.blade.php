@@ -64,6 +64,10 @@
                     class="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100"
                     accept="image/*">
             </div>
+            <div> <label class="block text-sm font-semibold text-slate-700 mb-1">Preço</label> <input type="number"
+                    name="preco" step="0.01" min="0" value="{{ old('preco', $conteudo->preco ?? 0) }}"
+                    class="w-full border border-slate-200 rounded-lg px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    required> </div>
 
             <button type="submit"
                 class="bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg py-3 transition">

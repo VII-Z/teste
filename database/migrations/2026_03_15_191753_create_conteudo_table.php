@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('subtitulo');
             $table->text('descricao');
             $table->string('imagem');
+            $table->decimal('preco', 8, 2);
             $table->timestamps();
         });
     }

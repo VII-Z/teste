@@ -107,10 +107,10 @@ class LandingControle extends Controller
         $session = StripeSession::retrieve($sessionId);
 
         $vendaId = $session->metadata->venda_id ?? null;
-        $paymentStatus = $session->payment_status ?? 'unpaid';
+        $paymentStatus = $session->payment_status ?? 'Não identificado';
 
         if ($vendaId) {
-            $statusFinal = $paymentStatus === 'paid' ? 'approved' : $paymentStatus;
+            $statusFinal = $paymentStatus === 'Pago' ? 'Aprovado' : $paymentStatus;
             Vendas::where('id', $vendaId)->update(['status' => $statusFinal]);
         }
 

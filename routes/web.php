@@ -14,7 +14,7 @@ Route::middleware('admin.auth')->group(function () {
     Route::get('/admin/conteudo', [AdminControle::class, 'editarConteudo']);
     Route::post('/admin/conteudo', [AdminControle::class, 'atualizarConteudo']);
     Route::get('/admin/pagamento', [AdminControle::class, 'pagamento']);
-    Route::get('/admin/logout', [AdminControle::class, 'logout']);
+    Route::post('/admin/logout', [AdminControle::class, 'logout']);
 });
 
 Route::post('/checkout/criar', [LandingControle::class, 'criarCheckout']);

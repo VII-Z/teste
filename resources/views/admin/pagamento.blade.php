@@ -1,9 +1,10 @@
 @extends('layouts.admin')
 @section('titulo', 'Vendas')
 @section('conteudo')
-<h2 class="text-2xl font-bold text-slate-800 mb-1">Relatório de Vendas</h2>
-<p class="text-slate-500 text-sm mb-6">Acompanhe todas as compras realizadas.</p>
-
+<div class="mb-8">
+    <h2 class="text-3xl font-extrabold text-blue-600 mb-2">Relatório de Vendas</h2>
+    <p class="text-slate-500 text-base">Acompanhe todas as compras realizadas.</p>
+</div>
 <div class="bg-white rounded-xl shadow-sm overflow-hidden">
     <table class="w-full text-sm">
         <thead class="bg-slate-50 text-slate-500 text-xs uppercase">
